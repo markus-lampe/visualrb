@@ -80,11 +80,14 @@
         ['heap_dump', null,     0    ]
       )
 
+      const params = new URLSearchParams(window.location.search);
+      const max_depth = params.get("max_depth") || 4;
+
       for (const name in roots) {
         data.push([name, 'heap_dump', 0])
 
         for (const reference of new Set(roots[name].references || [])) {
-          data.push(...grep(nodes, name, reference, 4))
+          data.push(...grep(nodes, name, reference, max_depth))
         }
       }
 
