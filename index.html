@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Ruby Heap Dump Visualization</title>
+
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    #chart {
+      width:  100%;
+      height: 100%;
+    }
+  </style>
+
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <div id="chart"></div>
+
+  <script>
+    function grep (nodes, parent, reference, i) {
+      const result = []
+
+      if (parent.indexOf(reference) > -1 || i === 0) return result;
+
+      const node = nodes[reference]
+      if (node === undefined) return result;
+
+      let label;
+      const name    = node.name
+      const type    = node.type
+      const address = node.address
+      if (name !== undefined) {
+        label = name.split('::').pop()
+      } else if (type !== undefined) {
+        label = `${type}@${address}`
+      } else {
+        label = address
+      }
+
+      const id  = `${parent}.${reference}`
+      const mem = node.memsize;
+
+      result.push([{v: id, f: label}, parent, mem])
+
+      for (const ref of new Set(node.references || [])) {
+        result.push(...grep(nodes, id, ref, i - 1))
+      }
+
+      return result
+    }
+
+    async function parse (file) {
+      const roots = {}
+      const nodes = {}
+
+      const lines = (await file.text()).trim().split('\n')
+      for (const i in lines) {
+        const entry = JSON.parse(lines[i])
+        if (entry.type === 'ROOT') {
+          roots[entry.root] = entry
+        } else {
+          nodes[entry.address] = entry
+        }
+      }
+
+      const data = []
+      data.push(
+        ['element',  'parent', 'size'],
+        ['heap_dump', null,     0    ]
+      )
+
+      for (const name in roots) {
+        data.push([name, 'heap_dump', 0])
+
+        for (const reference of new Set(roots[name].references || [])) {
+          data.push(...grep(nodes, name, reference, 4))
+        }
+      }
+
+      const table = google.visualization.arrayToDataTable(data)
+      tree = new google.visualization.TreeMap(document.getElementById('chart'));
+
+      tree.draw(table, {});
+    }
+
+    function handle_drop (e) {
+      e.preventDefault();
+
+      if (e.dataTransfer.items) {
+        for (const item of e.dataTransfer.items) {
+          if (item.kind === 'file') {
+            parse(item.getAsFile())
+          }
+        }
+      } else {
+        for (const file of e.dataTransfer.files) {
+          parse(file)
+        }
+      }
+    }
+
+    google.charts.load('current', {'packages':['treemap']});
+
+    document.body.addEventListener('drop',     e => handle_drop(e))
+    document.body.addEventListener('dragover', e => e.preventDefault())
+  </script>
+</body>
+</html>
