@@ -6,26 +6,36 @@
 
   <title>Ruby Heap Dump Visualization</title>
 
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <link href="index.css" rel="stylesheet">
+  <link href="app/import.css" rel="stylesheet">
+
   <style>
-    html {
-      height: 100%;
-    }
-
-    body {
-      height: 100%;
-      margin: 0;
-    }
-
     #chart {
-      width:  100%;
-      height: 100%;
+      width:  0;
+      height: 0;
     }
   </style>
 
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
+  <div id="import" class="overlay idle">
+    <div id="import-modal" class="centered">
+      <header>Ruby Heap Dump Visualization</header>
+      <div id="import-icon" class="centered"></div>
+      <footer>drag your ruby heap dump file(s) into the browser</footer>
+    </div>
+  </div>
+
+
   <div id="chart"></div>
+
+  <script src="index.js"></script>
+  <script src="app/import.js"></script>
+  <script src="app/utils.js"></script>
 
   <script>
     function grep (nodes, parent, reference, i) {
@@ -98,25 +108,10 @@
     }
 
     function handle_drop (e) {
-      e.preventDefault();
 
-      if (e.dataTransfer.items) {
-        for (const item of e.dataTransfer.items) {
-          if (item.kind === 'file') {
-            parse(item.getAsFile())
-          }
-        }
-      } else {
-        for (const file of e.dataTransfer.files) {
-          parse(file)
-        }
-      }
     }
 
     google.charts.load('current', {'packages':['treemap']});
-
-    document.body.addEventListener('drop',     e => handle_drop(e))
-    document.body.addEventListener('dragover', e => e.preventDefault())
   </script>
 </body>
 </html>
