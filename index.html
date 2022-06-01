@@ -25,8 +25,24 @@
   <div id="import" class="overlay idle">
     <div id="import-modal" class="centered">
       <header>Ruby Heap Dump Visualization</header>
-      <div id="import-icon" class="centered"></div>
       <footer>drag your ruby heap dump file(s) into the browser</footer>
+      <div id="import-icon" class="centered">
+        <div id="import-feedback"></div>
+      </div>
+      <svg id="import-circle" class="centered" viewBox="-100 -100 200 200">
+        <circle
+          id="import-progress"
+          cx="0"
+          cy="0"
+          r="95"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-width="5"
+          stroke-dasharray="0 1"
+          stroke-dashoffset="0.25"
+          pathLength="1"
+        />
+      </svg>
     </div>
   </div>
 

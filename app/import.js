@@ -30,6 +30,30 @@ app.import = (() => {
     const sizeFormatted = app.utils.formatBytes(totalSize)
     console.log(`${files.length} file(s) - ${sizeFormatted}`)
 
+    const feedback = document.getElementById('import-feedback')
+    const progress = document.getElementById('import-progress')
+
+    let bytesRead = 0;
+    const load = reader => {
+      reader.read().then(({done, value}) => {
+        if (done) return
+
+        bytesRead += value.length
+        feedback.innerText = app.utils.formatBytes(bytesRead,0)
+
+        const a = (bytesRead / totalSize).toFixed(2)
+        const b = 1 - a
+        progress.setAttribute('stroke-dasharray', `${a} ${b}`)
+
+        setTimeout(() => load(reader), 50)
+      })
+    }
+
+    for (const file of files) {
+      const reader = file.stream().getReader()
+      load(reader)
+    }
+
     while (files.length > 0) {
       files.shift()
     }

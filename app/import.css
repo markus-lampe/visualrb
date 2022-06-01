@@ -25,6 +25,20 @@
   transition: 0.4s opacity;
 }
 
+#import-modal footer {
+  position: absolute;
+  bottom:          0;
+  left:            0;
+  right:           0;
+
+  font-size: 2.5vmin;
+  line-height: 5vmin;
+  text-align: center;
+
+  opacity:         1;
+  transition: 0.4s opacity;
+}
+
 #import-icon {
   height:        30%;
   width:         30%;
@@ -54,16 +68,21 @@
   background-image: url("import/uploaded.svg");
 }
 
-#import-modal footer {
+#import-feedback {
+  position:  absolute;
+  top:            50%;
+  left:          130%;
+  font-size:    2vmin;
+  white-space: nowrap;
+
+  transform: translateY(-50%);
+}
+
+#import-circle {
   position: absolute;
-  bottom:          0;
-  left:            0;
-  right:           0;
+  height:        40%;
+  width:         40%;
+  color:     #81D4FA;
 
-  font-size: 2.5vmin;
-  line-height: 5vmin;
-  text-align: center;
-
-  opacity:         1;
-  transition: 0.4s opacity;
+  filter: drop-shadow(0 0 0.5vmin black);
 }
