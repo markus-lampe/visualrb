@@ -6,5 +6,6 @@
   ],
   "lang": "en-US",
   "name": "visualrb",
-  "scope": "https://markus-lampe.github.io/visualrb"
+  "scope": "https://markus-lampe.github.io/visualrb",
+  "theme_color": "#9b111e"
 }
