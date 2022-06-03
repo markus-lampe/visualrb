@@ -1,0 +1,8 @@
+{
+  "description": "Ruby Heap Dump Visualization",
+  "display": "standalone",
+  "icons": [ { "sizes": "any", "src": "app/icon.svg" } ],
+  "lang": "en-US",
+  "name": "visualrb",
+  "scope": "https://markus-lampe.github.io/visualrb"
+}

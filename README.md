@@ -4,6 +4,10 @@ Ruby Heap Dump Visualization
 
 ## Setup
 
+## Look and Feel
+
+Ruby Red: #9b111e
+
 ## Acknowledgements
 
 ### Icons
