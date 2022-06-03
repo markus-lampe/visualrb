@@ -20,7 +20,7 @@
     },
     {
       "sizes": "any",
-      "src": "icon.svg"
+      "src": "https://markus-lampe.github.io/visualrb/icon.svg"
     }
   ],
   "lang": "en-US",
