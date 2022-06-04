@@ -12,21 +12,8 @@ app.visualrb.ui.pages.skeleton = ((skeleton) => {
       </div>
     `
     const container = document.getElementById('content')
-    for (page of container.getElementsByClassName('page')) {
-      page.classList.add('hidden')
-    }
-
-    setTimeout(() => container.innerHTML = output, 400)
-    setTimeout(() => {
-      for (page of container.getElementsByClassName('page')) {
-        page.classList.remove('hidden')
-      }
-    }, 420);
-
-
-
+    container.innerHTML = output
   }
-
 
   return skeleton
 })({})

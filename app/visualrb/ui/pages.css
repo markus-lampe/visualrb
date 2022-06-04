@@ -1,24 +1,14 @@
 .page {
   position:             relative;
   min-height: calc(100vh - 70px);
-  box-sizing:         border-box;
   background:              white;
   display:                 block;
-  overflow:               hidden;
   z-index:     var(--layer-page);
-
-  opacity:                     1;
-  transition:        opacity .4s;
-}
-
-.page.hidden {
-  opacity:                     0;
 }
 
 .page-header {
   height:  var(--menu-item-size);
   background:    var(--ruby-red);
-  box-sizing:         border-box;
   padding:                 7.5px;
 }
 
@@ -38,5 +28,5 @@
 }
 
 .page-content {
-  padding:                  20px;
+  padding:                  25px;
 }
