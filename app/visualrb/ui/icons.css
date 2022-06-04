@@ -3,6 +3,11 @@
   background-size: cover;
 }
 
+.icon-import {
+  background-image: url(icons/import.svg);
+  background-size: cover;
+}
+
 .icon-info {
   background-image: url(icons/info.svg);
   background-size: cover;

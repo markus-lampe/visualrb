@@ -1,6 +1,11 @@
 app.visualrb.ui.menu = ((menu) => {
   const entries = [
     {
+      icon: 'import',
+      label: 'import',
+      onclick: "--salert('folder')"
+    },
+    {
       icon: 'folder',
       label: 'uploads',
       onclick: "--salert('folder')"
