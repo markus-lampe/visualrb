@@ -2,37 +2,37 @@ app.visualrb.ui.menu = ((menu) => {
   const entries = [
     {
       icon: 'folder',
-      label: 'heap dumps',
+      label: 'heap dump overview',
       onclick: 'app.visualrb.ui.pages.overview.show()'
     },
     {
       icon: 'compare',
-      label: 'compare & analyze',
+      label: 'compare & visualize',
       onclick: 'app.visualrb.ui.pages.analyzer.show()'
     },
     {
       icon: 'export',
-      label: 'export',
+      label: 'export visualizations',
       onclick: 'app.visualrb.ui.pages.exporter.show()'
     },
     {
       icon: 'import',
-      label: 'import',
+      label: 'import visualizations',
       onclick: 'app.visualrb.ui.pages.importer.show()'
     },
     {
       icon: 'printer',
-      label: 'print',
+      label: 'printable reports',
       onclick: 'app.visualrb.ui.pages.printer.show()'
     },
     {
       icon: 'settings',
-      label: 'settings',
+      label: 'tool settings',
       onclick: 'app.visualrb.ui.pages.settings.show()'
     },
     {
       icon: 'info',
-      label: 'about',
+      label: 'about this tool',
       onclick: 'app.visualrb.ui.pages.about.show()'
     },
   ]
