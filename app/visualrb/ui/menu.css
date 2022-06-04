@@ -41,8 +41,8 @@
   position:          absolute;
   top:                    50%;
   left:                  100%;
-  padding:          10px 25px;
-  min-width:            150px;
+  padding:               10px;
+  min-width:            125px;
   background: var(--ruby-red);
   color:                white;
   line-height:           30px;
