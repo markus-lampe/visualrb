@@ -5,6 +5,7 @@
   width: var(--menu-item-size);
   display:        inline-block;
   transform:  translateY(-50%);
+  z-index:   var(--layer-menu);
 }
 
 .menu-item {
