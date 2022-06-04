@@ -1,3 +1,8 @@
+.icon-compare {
+  background-image: url(icons/compare.svg);
+  background-size: cover;
+}
+
 .icon-export {
   background-image: url(icons/export.svg);
   background-size: cover;

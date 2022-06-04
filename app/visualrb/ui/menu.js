@@ -3,32 +3,37 @@ app.visualrb.ui.menu = ((menu) => {
     {
       icon: 'folder',
       label: 'heap dumps',
-      onclick: "--salert('folder')"
+      onclick: 'app.visualrb.ui.show_heap_dumps()'
     },
     {
-      icon: 'import',
-      label: 'import',
-      onclick: "--salert('folder')"
+      icon: 'compare',
+      label: 'compare & analyze',
+      onclick: 'app.visualrb.ui.show_analyzer()'
     },
     {
       icon: 'export',
       label: 'export',
-      onclick: "--salert('folder')"
+      onclick: 'app.visualrb.ui.show_export_dialog()'
+    },
+    {
+      icon: 'import',
+      label: 'import',
+      onclick: 'app.visualrb.ui.show_import_dialog()'
     },
     {
       icon: 'printer',
       label: 'print',
-      onclick: "--salert('setting')"
+      onclick: 'app.visualrb.ui.show_print_dialog()'
     },
     {
       icon: 'settings',
       label: 'settings',
-      onclick: "--salert('setting')"
+      onclick: 'app.visualrb.ui.show_settings()'
     },
     {
       icon: 'info',
       label: 'about',
-      onclick: "--salert('about')"
+      onclick: 'app.visualrb.ui.show_info()'
     },
   ]
 
