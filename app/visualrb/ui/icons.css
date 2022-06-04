@@ -1,3 +1,8 @@
+.icon-export {
+  background-image: url(icons/export.svg);
+  background-size: cover;
+}
+
 .icon-folder {
   background-image: url(icons/folder.svg);
   background-size: cover;
@@ -10,6 +15,11 @@
 
 .icon-info {
   background-image: url(icons/info.svg);
+  background-size: cover;
+}
+
+.icon-printer {
+  background-image: url(icons/printer.svg);
   background-size: cover;
 }
 

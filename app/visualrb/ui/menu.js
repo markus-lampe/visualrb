@@ -1,14 +1,24 @@
 app.visualrb.ui.menu = ((menu) => {
   const entries = [
     {
+      icon: 'folder',
+      label: 'heap dumps',
+      onclick: "--salert('folder')"
+    },
+    {
       icon: 'import',
       label: 'import',
       onclick: "--salert('folder')"
     },
     {
-      icon: 'folder',
-      label: 'uploads',
+      icon: 'export',
+      label: 'export',
       onclick: "--salert('folder')"
+    },
+    {
+      icon: 'printer',
+      label: 'print',
+      onclick: "--salert('setting')"
     },
     {
       icon: 'settings',
