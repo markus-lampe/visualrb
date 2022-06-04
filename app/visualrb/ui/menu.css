@@ -49,8 +49,8 @@
   visibility:      hidden;
   transition: .4s opacity;
 
-  transform: translateY(-50%);
-  text-shadow:  0 0 2px white;
+  transform:    translateY(-50%);
+  text-shadow: 2px 2px 5px white;
 }
 
 .menu-item:hover .menu-label {
