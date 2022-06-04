@@ -30,7 +30,7 @@ app.visualrb.ui.pages.tutorial = ((page) => {
       <code>
         pid=1234<br>
         bundle exec rbtrace -p $pid -e 'load("/tmp/dump.rb")'
-      </code
+      </code>
       <br>
       finally drag the heap dump into the browser<br>
       done
