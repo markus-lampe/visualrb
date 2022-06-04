@@ -1,0 +1,52 @@
+#menu {
+  display:        inline-block;
+  position:           absolute;
+  left:                      0;
+  top:                     50%;
+  width: var(--menu-item-size);
+
+  transform:  translateY(-50%);
+}
+
+.menu-item {
+  position:            relative;
+  width:                   100%;
+  height: var(--menu-item-size);
+  box-sizing:        border-box;
+  padding:                  15%;
+  cursor:               pointer;
+
+  background:   var(--ruby-red);
+  filter:        grayscale(40%);
+  transition:       0.4s filter;
+}
+
+.menu-item:hover {
+  filter: none;
+}
+
+.menu-item:hover .menu-label {
+  opacity:          1;
+  visibility: visible;
+}
+
+.menu-icon {
+  width:  100%;
+  height: 100%;
+}
+
+.menu-label {
+  position:   absolute;
+  top:             50%;
+  left:           100%;
+  padding:        10px;
+  color:         black;
+  white-space:  nowrap;
+
+  opacity:               0;
+  visibility:       hidden;
+  transition: 0.4s opacity;
+
+
+  transform: translateY(-50%);
+}

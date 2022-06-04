@@ -8,13 +8,28 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <script defer src="app.js"></script>
+  <script defer src="app/visualrb.js"></script>
+  <script defer src="app/visualrb/ui.js"></script>
+  <script defer src="app/visualrb/ui/menu.js"></script>
+  <script defer src="app/visualrb/ui/menu/item.js"></script>
+
+  <link href="app.css" rel="stylesheet">
+  <link href="app/visualrb/ui.css" rel="stylesheet">
+  <link href="app/visualrb/ui/fonts.css" rel="stylesheet">
+  <link href="app/visualrb/ui/icons.css" rel="stylesheet">
+  <link href="app/visualrb/ui/menu.css" rel="stylesheet">
+
   <link href="app/favicon.ico" rel="icon" type="image/x-icon">
   <link href="app/manifest.json" rel="manifest">
 
+
+
+
   <script src="https://www.gstatic.com/charts/loader.js"></script>
 
-  <link href="index.css" rel="stylesheet">
-  <link href="app/import.css" rel="stylesheet">
+  <!--link href="index.css" rel="stylesheet"-->
+  <!--link href="app/import.css" rel="stylesheet"-->
 
   <style>
     #chart {
@@ -24,8 +39,13 @@
   </style>
 
 </head>
-<body>
-  <div id="import" class="overlay idle">
+<body onload="app.init()">
+  <div id="menu">Ruby Heap Dump Visualization</div>
+
+
+
+
+  <!-- div id="import" class="overlay idle">
     <div id="import-modal" class="centered">
       <header>Ruby Heap Dump Visualization</header>
       <footer>drag your ruby heap dump file(s) into the browser</footer>
@@ -47,14 +67,14 @@
         />
       </svg>
     </div>
-  </div>
+  </div -->
 
 
-  <div id="chart"></div>
+  <!--div id="chart"></div>
 
   <script src="index.js"></script>
   <script src="app/import.js"></script>
-  <script src="app/utils.js"></script>
+  <script src="app/utils.js"></script-->
 
   <script>
     function grep (nodes, parent, reference, i) {
