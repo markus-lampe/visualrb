@@ -32,3 +32,8 @@
   background-image: url(icons/settings.svg);
   background-size: cover;
 }
+
+.icon-training {
+  background-image: url(icons/training.svg);
+  background-size: cover;
+}

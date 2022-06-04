@@ -50,6 +50,7 @@
   transition: .4s opacity;
 
   transform: translateY(-50%);
+  text-shadow:  0 0 2px white;
 }
 
 .menu-item:hover .menu-label {
