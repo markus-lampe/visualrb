@@ -1,32 +1,30 @@
 .page {
-  position:        relative;
-  height:              100%;
-  padding:             20px;
-  box-sizing:    border-box;
-  border-radius:       42px;
-  box-shadow: 0 0 5px black;
-  display:            block;
+  position:     relative;
+  height:           100%;
+  padding:          20px;
+  box-sizing: border-box;
+  background:      white;
+  display:         block;
 }
 
-.page-bubble {
-  display:       inline-block;
-  width:                 42px;
+.page-header {
   height:                42px;
   background: var(--ruby-red);
-  border-radius:         100%;
   box-sizing:      border-box;
   padding:                5px;
 }
 
 .page-icon {
-  width:  100%;
-  height: 100%;
+  width:           32px;
+  height:          32px;
+  display: inline-block;
 }
 
-.page-headline {
+.page-title {
   position:    absolute;
-  padding:          5px;
-  font-size:       24px;
+  margin-left:      5px;
+  color:          white;
+  font-size:       18px;
   line-height:     32px;
   display: inline-block;
 }

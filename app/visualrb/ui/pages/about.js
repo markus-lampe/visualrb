@@ -1,9 +1,10 @@
 app.visualrb.ui.pages.about = ((page) => {
   const template = `
     <div id="page-about" class="page">
-      <div class="page-headline">about</div>
-    
-    
+      <div class="page-header">
+        <div class="page-icon icon-info"></div>
+        <div class="page-title">about this tool</div>
+      </div>
     </div>
   `
 
