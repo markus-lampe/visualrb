@@ -14,15 +14,20 @@
   height: var(--menu-item-size);
   box-sizing:        border-box;
   padding:                  15%;
+  background:   var(--ruby-red);
+  box-shadow:    0 3px 2px gray;
   cursor:               pointer;
 
-  background:   var(--ruby-red);
-  filter:        grayscale(40%);
-  transition:       0.4s filter;
+  margin:                     0;
+  transition:          0.4s all;
 }
 
 .menu-item:hover {
-  filter: none;
+  margin: 5px 0;
+}
+
+.menu-item:active {
+  box-shadow:    0 1px 1px gray;
 }
 
 .menu-item:hover .menu-label {

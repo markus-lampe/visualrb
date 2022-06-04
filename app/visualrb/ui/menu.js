@@ -3,17 +3,17 @@ app.visualrb.ui.menu = ((menu) => {
     {
       icon: 'folder',
       label: 'uploads',
-      onclick: "alert('folder')"
+      onclick: "--salert('folder')"
     },
     {
       icon: 'settings',
       label: 'settings',
-      onclick: "alert('setting')"
+      onclick: "--salert('setting')"
     },
     {
       icon: 'info',
       label: 'about',
-      onclick: "alert('about')"
+      onclick: "--salert('about')"
     },
   ]
 
