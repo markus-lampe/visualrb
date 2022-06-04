@@ -16,17 +16,15 @@
   padding:                  15%;
   background:   var(--ruby-red);
   cursor:               pointer;
-
-  border:                  none;
-  transition:        .4s border;
+  filter:                  none;
 }
 
 .menu-item:hover {
-  border: 1px solid white;
+  filter: brightness(120%);
 }
 
 .menu-item:active {
-  border: 2px solid white;
+  filter: brightness(150%);
 }
 
 .menu-item:hover .menu-label {
