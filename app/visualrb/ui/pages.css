@@ -1,0 +1,19 @@
+.page {
+  position:      relative;
+  border: 1px solid black;
+  border-radius:      5px;
+  padding:           20px;
+  margin-bottom:     50px;
+  box-sizing:  border-box;
+
+  opacity:              1;
+  height:            100%;
+  display:          block;
+}
+
+.page-headline {
+  padding:          5px;
+  font-size:       24px;
+  font-weight:     bold;
+  line-height:     32px;
+}
