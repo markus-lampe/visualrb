@@ -5,6 +5,9 @@ app.visualrb.ui.pages.about = ((page) => {
         <div class="page-icon icon-info"></div>
         <div class="page-title">about this tool</div>
       </div>
+      <div class="page-content">
+        
+      </div>
     </div>
   `
 
