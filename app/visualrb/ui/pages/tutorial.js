@@ -2,10 +2,10 @@ app.visualrb.ui.pages.tutorial = ((page) => {
   const content = `
     <h1>getting a heap dump</h1>
     <p>
-      install <a href="https://github.com/tmm1/rbtrace">rbtrace</a><br>
+      install <b>rbtrace</b><br>
       <code>> gem install rbtrace </code>
       <br>
-      or add directly to <i>Gemfile</i><br> 
+      or add directly to <b>Gemfile</b><br> 
       <code>gem "rbtrace"</code>
       <br>
       create this ruby script<br>
