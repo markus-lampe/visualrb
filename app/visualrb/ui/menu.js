@@ -1,6 +1,11 @@
 app.visualrb.ui.menu = ((menu) => {
   const entries = [
     {
+      icon: 'training',
+      label: 'getting started',
+      onclick: 'app.visualrb.ui.pages.tutorial.show()'
+    },
+    {
       icon: 'folder',
       label: 'heap dump overview',
       onclick: 'app.visualrb.ui.pages.overview.show()'

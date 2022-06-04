@@ -1,11 +1,13 @@
 #menu {
-  position:              fixed;
-  left:                      0;
-  top:                    50vh;
-  width: var(--menu-item-size);
-  display:        inline-block;
-  transform:  translateY(-50%);
-  z-index:   var(--layer-menu);
+  position:               fixed;
+  left:                       0;
+  top:                     50vh;
+  width:  var(--menu-item-size);
+  display:         inline-block;
+  transform:   translateY(-50%);
+  z-index:    var(--layer-menu);
+
+  filter: drop-shadow(0 2px 3px var(--dark-grey));
 }
 
 .menu-item {
@@ -17,19 +19,18 @@
   cursor:               pointer;
 
   filter:                  none;
-
-  padding:                  15%;
+  padding:                  7px;
   transition:       .2s padding;
 }
 
 .menu-item:hover {
-  padding:             10%;
-  filter: brightness(120%);
+  filter:      brightness(120%);
+  padding:                  5px;
 }
 
 .menu-item:active {
-  padding:             15%;
-  filter: brightness(150%);
+  filter:      brightness(150%);
+  padding:                  7px;
 }
 
 .menu-icon {

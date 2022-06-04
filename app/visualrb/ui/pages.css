@@ -1,16 +1,20 @@
 .page {
   position:             relative;
   min-height: calc(100vh - 70px);
+  padding:                   3px;
   background:              white;
+  box-sizing:         border-box;
   display:                 block;
   z-index:     var(--layer-page);
+
+  box-shadow: 0 2px 3px var(--dark-grey);
 }
 
 .page-header {
   height:  var(--menu-item-size);
   background:    var(--ruby-red);
   box-sizing:         border-box;
-  padding:                 7.5px;
+  padding:                   7px;
 }
 
 .page-icon {
@@ -21,7 +25,7 @@
 
 .page-title {
   position:             absolute;
-  margin-left:               5px;
+  padding-left:              5px;
   color:                   white;
   font-size:                16px;
   line-height:              35px;
@@ -30,4 +34,20 @@
 
 .page-content {
   padding:                  20px;
+  font-size:                14px;
+  line-height:              18px;
+}
+
+.page h1 {
+  font-size:                16px;
+  line-height:              24px;
+}
+
+.page code {
+  margin:                   15px;
+  padding:             10px 15px;
+  box-sizing:         border-box;
+  background:  var(--light-grey);
+  border-radius:             3px;
+  display:                 block;
 }
