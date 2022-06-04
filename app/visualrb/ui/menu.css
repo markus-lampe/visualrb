@@ -42,9 +42,11 @@
   top:                    50%;
   left:                  100%;
   padding:          10px 25px;
+  min-width:            150px;
   background: var(--ruby-red);
   color:                white;
   line-height:           30px;
+  text-align:          center;
   white-space:         nowrap;
 
   visibility:          hidden;
