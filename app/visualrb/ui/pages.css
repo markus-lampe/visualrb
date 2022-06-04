@@ -9,6 +9,7 @@
 .page-header {
   height:  var(--menu-item-size);
   background:    var(--ruby-red);
+  box-sizing:         border-box;
   padding:                 7.5px;
 }
 
@@ -28,5 +29,5 @@
 }
 
 .page-content {
-  padding:                  25px;
+  padding:                  20px;
 }
