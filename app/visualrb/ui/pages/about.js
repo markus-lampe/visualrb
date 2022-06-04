@@ -14,12 +14,12 @@ app.visualrb.ui.pages.about = ((page) => {
       page.classList.add('hidden')
     }
 
-    setTimeout(() => container.innerHTML = template, 400)
+    setTimeout(() => container.innerHTML = template, 100)
     setTimeout(() => {
       for (page of container.getElementsByClassName('page')) {
         page.classList.remove('loading')
       }
-    }, 420);
+    }, 200);
   }
 
   return page
