@@ -17,16 +17,16 @@
   background:   var(--ruby-red);
   cursor:               pointer;
 
-  box-shadow:              none;
-  transition:    .4s box-shadow;
+  border:                  none;
+  transition:        .4s border;
 }
 
 .menu-item:hover {
-  box-shadow: 0 0 2px black inset;
+  border: 1px solid white;
 }
 
 .menu-item:active {
-  box-shadow: 0 0 5px black inset;
+  border: 2px solid white;
 }
 
 .menu-item:hover .menu-label {
