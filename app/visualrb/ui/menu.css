@@ -47,14 +47,11 @@
   line-height:           30px;
   white-space:         nowrap;
 
-  opacity:                  0;
   visibility:          hidden;
-  transition:     .4s opacity;
 
   transform: translateY(-50%);
 }
 
 .menu-item:hover .menu-label {
-  opacity:          1;
   visibility: visible;
 }
