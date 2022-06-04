@@ -1,11 +1,11 @@
 .page {
-  position:         relative;
-  height:               100%;
-  padding:              20px;
-  box-sizing:     border-box;
-  background:          white;
-  display:             block;
-  z-index: var(--layer-page);
+  position:          relative;
+  height:                100%;
+  padding:               20px;
+  box-sizing:      border-box;
+  background:           white;
+  display:              block;
+  z-index:  var(--layer-page);
 }
 
 .page-header {
@@ -16,16 +16,16 @@
 }
 
 .page-icon {
-  width:           32px;
-  height:          32px;
-  display: inline-block;
+  width:                 32px;
+  height:                32px;
+  display:       inline-block;
 }
 
 .page-title {
-  position:    absolute;
-  margin-left:      5px;
-  color:          white;
-  font-size:       18px;
-  line-height:     32px;
-  display: inline-block;
+  position:         absolute;
+  margin-left:           5px;
+  color:               white;
+  font-size:            18px;
+  line-height:          32px;
+  display:      inline-block;
 }
