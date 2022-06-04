@@ -31,11 +31,6 @@
   filter: brightness(150%);
 }
 
-.menu-item:hover .menu-label {
-  opacity:          1;
-  visibility: visible;
-}
-
 .menu-icon {
   width:  100%;
   height: 100%;
@@ -54,4 +49,11 @@
   transition: .4s opacity;
 
   transform: translateY(-50%);
+
+  text-shadow: 0 0 2px var(--light-grey);
+}
+
+.menu-item:hover .menu-label {
+  opacity:          1;
+  visibility: visible;
 }
