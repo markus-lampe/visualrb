@@ -38,19 +38,20 @@
 }
 
 .menu-label {
-  position:      absolute;
-  top:                50%;
-  left:              100%;
-  padding:           10px;
-  color:            black;
-  white-space:     nowrap;
+  position:          absolute;
+  top:                    50%;
+  left:                  100%;
+  padding:          10px 25px;
+  background: var(--ruby-red);
+  color:                white;
+  line-height:           30px;
+  white-space:         nowrap;
 
-  opacity:              0;
-  visibility:      hidden;
-  transition: .4s opacity;
+  opacity:                  0;
+  visibility:          hidden;
+  transition:     .4s opacity;
 
-  transform:    translateY(-50%);
-  text-shadow: 2px 2px 5px white;
+  transform: translateY(-50%);
 }
 
 .menu-item:hover .menu-label {
