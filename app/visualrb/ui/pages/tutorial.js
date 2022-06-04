@@ -3,9 +3,11 @@ app.visualrb.ui.pages.tutorial = ((page) => {
     <h1>getting a heap dump</h1>
     <p>
       install <a href="https://github.com/tmm1/rbtrace">rbtrace</a><br>
-      <code>> gem install rbtrace </code><br>
+      <code>> gem install rbtrace </code>
+      <br>
       or add directly to <i>Gemfile</i><br> 
-      <code>gem "rbtrace"</code><br>
+      <code>gem "rbtrace"</code>
+      <br>
       create this ruby script<br>
       <code>
         > vim /tmp/dump.rb<br>
@@ -16,17 +18,20 @@ app.visualrb.ui.pages.tutorial = ((page) => {
         &nbsp;&nbsp;ObjectSpace.dump_all(output: io)<br>
         &nbsp;&nbsp;io.close<br>
         }        
-      </code><br>
+      </code>
+      <br>
       create the heap dump<br>
       <code>
         pid = 1234<br>
         rbtrace -p $pid -e 'load("/tmp/dump.rb")'
-      </code><br>
+      </code>
+      <br>
       or on Rails<br>
       <code>
         pid = 1234<br>
         bundle exec rbtrace -p $pid -e 'load("/tmp/dump.rb")'
-      </code><br>
+      </code
+      <br>
       finally drag the heap dump into the browser<br>
       done
     </p>

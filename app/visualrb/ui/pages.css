@@ -43,11 +43,17 @@
   line-height:              24px;
 }
 
+.page p {
+  padding:             10px 15px;
+}
+
 .page code {
-  margin:                   15px;
+  margin:                 15px 0;
   padding:             10px 15px;
   box-sizing:         border-box;
   background:  var(--light-grey);
-  border-radius:             3px;
+  --border-radius:             3px;
   display:                 block;
+
+  box-shadow: 0 2px 3px var(--dark-grey) inset;
 }
