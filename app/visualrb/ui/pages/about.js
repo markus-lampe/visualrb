@@ -10,7 +10,11 @@ app.visualrb.ui.pages.about = ((page) => {
 
   page.show = () => {
     const container = document.getElementById('content')
-    container.innerHTML = template
+    for (page of container.getElementsByClassName('page')) {
+      page.classList.add('hidden')
+    }
+
+    setTimeout(() => container.innerHTML = template, 400)
   }
 
   return page
