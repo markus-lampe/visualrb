@@ -10,24 +10,24 @@
 
 .menu-item {
   position:            relative;
+  left:                       0;
   width:                   100%;
   height: var(--menu-item-size);
   box-sizing:        border-box;
   padding:                  15%;
   background:   var(--ruby-red);
-  box-shadow:    0 3px 2px gray;
   cursor:               pointer;
 
-  margin:                     0;
-  transition:          0.4s all;
+  box-shadow:              none;
+  transition:    .4s box-shadow;
 }
 
 .menu-item:hover {
-  margin: 5px 0;
+  box-shadow: 0 0 2px black inset;
 }
 
 .menu-item:active {
-  box-shadow:    0 1px 1px gray;
+  box-shadow: 0 0 5px black inset;
 }
 
 .menu-item:hover .menu-label {
@@ -41,17 +41,16 @@
 }
 
 .menu-label {
-  position:   absolute;
-  top:             50%;
-  left:           100%;
-  padding:        10px;
-  color:         black;
-  white-space:  nowrap;
+  position:      absolute;
+  top:                50%;
+  left:              100%;
+  padding:           10px;
+  color:            black;
+  white-space:     nowrap;
 
-  opacity:               0;
-  visibility:       hidden;
-  transition: 0.4s opacity;
-
+  opacity:              0;
+  visibility:      hidden;
+  transition: .4s opacity;
 
   transform: translateY(-50%);
 }
