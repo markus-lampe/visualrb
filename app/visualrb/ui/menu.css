@@ -13,17 +13,22 @@
   width:                   100%;
   height: var(--menu-item-size);
   box-sizing:        border-box;
-  padding:                  15%;
   background:   var(--ruby-red);
   cursor:               pointer;
+
   filter:                  none;
+
+  padding:                  15%;
+  transition:       .2s padding;
 }
 
 .menu-item:hover {
+  padding:             10%;
   filter: brightness(120%);
 }
 
 .menu-item:active {
+  padding:             15%;
   filter: brightness(150%);
 }
 
