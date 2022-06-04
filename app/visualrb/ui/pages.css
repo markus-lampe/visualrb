@@ -1,19 +1,32 @@
 .page {
-  position:      relative;
-  border: 1px solid black;
-  border-radius:      5px;
-  padding:           20px;
-  margin-bottom:     50px;
-  box-sizing:  border-box;
+  position:        relative;
+  height:              100%;
+  padding:             20px;
+  box-sizing:    border-box;
+  border-radius:       42px;
+  box-shadow: 0 0 5px black;
+  display:            block;
+}
 
-  opacity:              1;
-  height:            100%;
-  display:          block;
+.page-bubble {
+  display:       inline-block;
+  width:                 42px;
+  height:                42px;
+  background: var(--ruby-red);
+  border-radius:         100%;
+  box-sizing:      border-box;
+  padding:                5px;
+}
+
+.page-icon {
+  width:  100%;
+  height: 100%;
 }
 
 .page-headline {
+  position:    absolute;
   padding:          5px;
   font-size:       24px;
-  font-weight:     bold;
   line-height:     32px;
+  display: inline-block;
 }

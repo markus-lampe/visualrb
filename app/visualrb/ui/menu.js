@@ -40,7 +40,7 @@ app.visualrb.ui.menu = ((menu) => {
   menu.init = () => {
     const container = document.getElementById('menu')
     container.innerHTML =
-      entries.map(entry => menu.item(entry).toString()).join('\n')
+      entries.map(entry => menu.item(entry)).join('\n')
   }
 
   return menu
