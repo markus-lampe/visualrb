@@ -14,7 +14,7 @@ app.visualrb.ui.pages.tutorial = ((page) => {
         Thread.new {<br>
         &nbsp;&nbsp;GC.start<br>
         &nbsp;&nbsp;require "objspace"<br>
-        &nbsp;&nbsp;io=File.open("/tmp/ruby-heap.dump", "w")<br>
+        &nbsp;&nbsp;io = File.open("/tmp/ruby-heap.dump", "w")<br>
         &nbsp;&nbsp;ObjectSpace.dump_all(output: io)<br>
         &nbsp;&nbsp;io.close<br>
         }        
@@ -22,13 +22,13 @@ app.visualrb.ui.pages.tutorial = ((page) => {
       <br>
       create the heap dump<br>
       <code>
-        pid = 1234<br>
+        pid=1234<br>
         rbtrace -p $pid -e 'load("/tmp/dump.rb")'
       </code>
       <br>
       or on Rails<br>
       <code>
-        pid = 1234<br>
+        pid=1234<br>
         bundle exec rbtrace -p $pid -e 'load("/tmp/dump.rb")'
       </code
       <br>
