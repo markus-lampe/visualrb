@@ -1,10 +1,9 @@
 #menu {
-  display:        inline-block;
-  position:           absolute;
+  position:              fixed;
   left:                      0;
-  top:                     50%;
+  top:                    50vh;
   width: var(--menu-item-size);
-
+  display:        inline-block;
   transform:  translateY(-50%);
 }
 

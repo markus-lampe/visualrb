@@ -6,16 +6,27 @@
 
   <title>Ruby Heap Dump Visualization</title>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script defer src="app.js"></script>
   <script defer src="app/visualrb.js"></script>
+  <script defer src="app/visualrb/db.js"></script>
   <script defer src="app/visualrb/ui.js"></script>
   <script defer src="app/visualrb/ui/menu.js"></script>
   <script defer src="app/visualrb/ui/menu/item.js"></script>
+  <script defer src="app/visualrb/ui/pages.js"></script>
+  <script defer src="app/visualrb/ui/pages/about.js"></script>
+  <script defer src="app/visualrb/ui/pages/analyzer.js"></script>
+  <script defer src="app/visualrb/ui/pages/exporter.js"></script>
+  <script defer src="app/visualrb/ui/pages/importer.js"></script>
+  <script defer src="app/visualrb/ui/pages/overview.js"></script>
+  <script defer src="app/visualrb/ui/pages/printer.js"></script>
+  <script defer src="app/visualrb/ui/pages/settings.js"></script>
+  <script defer src="app/visualrb/ui/pages/skeleton.js"></script>
+  <script defer src="app/visualrb/ui/pages/welcome.js"></script>
 
-  <link href="app.css" rel="stylesheet">
   <link href="app/visualrb/ui.css" rel="stylesheet">
+  <link href="app/visualrb/ui/content.css" rel="stylesheet">
   <link href="app/visualrb/ui/fonts.css" rel="stylesheet">
   <link href="app/visualrb/ui/icons.css" rel="stylesheet">
   <link href="app/visualrb/ui/menu.css" rel="stylesheet">
@@ -40,8 +51,8 @@
 
 </head>
 <body onload="app.init()">
-  <div id="menu">Ruby Heap Dump Visualization</div>
-
+  <div id="menu"></div>
+  <div id="content"></div>
 
 
 
@@ -76,7 +87,7 @@
   <script src="app/import.js"></script>
   <script src="app/utils.js"></script-->
 
-  <script>
+  <!--script>
     function grep (nodes, parent, reference, i) {
       const result = []
 
@@ -151,6 +162,6 @@
     }
 
     google.charts.load('current', {'packages':['treemap']});
-  </script>
+  </script-->
 </body>
 </html>

@@ -4,11 +4,10 @@
   "icons": [
     {
       "sizes": "any",
-      "src": "https://markus-lampe.github.io/visualrb/app/icon.svg"
+      "src": "app/icon.svg"
     }
   ],
   "lang": "en-US",
   "name": "visualrb",
-  "scope": "https://markus-lampe.github.io/visualrb",
   "theme_color": "#9b111e"
 }

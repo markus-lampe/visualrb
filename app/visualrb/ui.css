@@ -1,6 +1,19 @@
 :root {
-  --dark-red: #2e0509;
-  --ruby-red: #9b111e;
+  --dark-red:    #2e0509;
+  --ruby-red:    #9b111e;
 
   --menu-item-size: 50px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin:    0;
+}
+
+.centered {
+
 }
